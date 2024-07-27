@@ -1,0 +1,42 @@
+name = input("Type your name: ")
+print("Welcome", name, "to this adventure!")
+print("Hope you enjoy the game 
+
+answer = input(
+    "You are entering into the forest \n you can go left or right. Which way would you like to go? ").lower()
+
+if answer == "left":
+    answer = input(
+        "You come to a river, you have two ways to cross the river whether by sitting on the crocodile or by swimming \n which way would you like to choose?? \n Type crocodile to cross by crocodile  and swim to swimming across: ")
+
+    if answer == "crocodile":
+        print("You are going to eaten by crocodile \n you will lost in the game.")
+    elif answer == "swimming":
+        print("You want swim carefully without catch by any fishes \n cross the rive go to the next stage in the game.")
+    else:
+        print('Not a valid option. You lose.')
+
+elif answer == "right":
+    answer = input(
+        "You come to a bridge, it looks wobbly, you can  cross it by two ways by using bike or by car \n which would you like to choose (car/bike)? ")
+
+
+     if answer == "car":
+        answer = input(
+            "You are going to met with accident you are going to die in that accident. \n you will lost the game")
+    elif answer == "bike":
+        print("You can cross the bridge safely \n meet one stranger. \n would you like you talk with stranger or ignore .(talk/ignore)")
+   
+        if answer == "talk":
+            print("You talk to the stranger \n that stranger going to show the path to treasure \n  you go there and take that gold. You WIN!")
+        elif answer == "ignore":
+            print("You ignore the stranger \n they are offended and you lose.")
+        else:
+            print('Not a valid option. You lose.')
+    else:
+        print('Not a valid option. You lose.')
+
+else:
+    print('Not a valid option. You lose.')
+
+print("Thank you for trying", name)
